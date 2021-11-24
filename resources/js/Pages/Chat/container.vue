@@ -67,7 +67,7 @@ export default {
 
         },
         getRooms() {
-            axios.get('/chat/rooms')
+            axios.get('/ChatApp/chat/rooms')
             .then(response => {
                 this.chatRooms = response.data;
                 this.setRoom(response.data[0]);
